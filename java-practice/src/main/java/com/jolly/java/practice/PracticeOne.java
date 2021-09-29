@@ -8,6 +8,7 @@ public class PracticeOne {
 		PracticeOne.div(50, 2);
 		PracticeOne.printRightAngleTriangle(5);
 		PracticeOne.printHoloRectangle(4, 5);
+		PracticeOne.findArmStrongNumber(370);
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -44,4 +45,32 @@ public class PracticeOne {
 			System.out.println( );
 		}
 	}
+	public static void findArmStrongNumber(int num){
+		int temp = num;
+		int length =0;
+		while (temp!=0){
+			temp = temp/10;
+			length = length +1;
+		}
+			int temp1 = num;
+			int rem =0;
+			int arm = 0;
+			while (temp1!=0){
+				int mul =1;
+			
+				rem = temp1%10;
+				for (int i=1; i<=length; i++){
+					mul = mul*rem;
+				}
+				arm = arm + mul;
+				temp1 = temp1/10;
+			}
+			if (num == arm){
+				System.out.println("This is Armstrong number");
+			}
+			else {
+				System.out.println(" This is not Armstong number" );
+			}
+		}
+	
 }
