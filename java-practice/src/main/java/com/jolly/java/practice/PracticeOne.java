@@ -52,25 +52,25 @@ public class PracticeOne {
 			temp = temp/10;
 			length = length +1;
 		}
-			int temp1 = num;
-			int rem =0;
-			int arm = 0;
-			while (temp1!=0){
-				int mul =1;
-			
-				rem = temp1%10;
-				for (int i=1; i<=length; i++){
-					mul = mul*rem;
-				}
-				arm = arm + mul;
-				temp1 = temp1/10;
+		int temp1 = num;
+		int rem =0;
+		int arm = 0;
+		while (temp1!=0){
+			int mul =1;
+
+			rem = temp1%10;
+			for (int i=1; i<=length; i++){
+				mul = mul*rem;
 			}
-			if (num == arm){
-				System.out.println("This is Armstrong number");
-			}
-			else {
-				System.out.println(" This is not Armstong number" );
-			}
+			arm = arm + mul;
+			temp1 = temp1/10;
 		}
+		if (num == arm){
+			System.out.println("This is Armstrong number");
+		}
+		else {
+			System.out.println(" This is not Armstong number" );
+		}
+	}
 	
 }
