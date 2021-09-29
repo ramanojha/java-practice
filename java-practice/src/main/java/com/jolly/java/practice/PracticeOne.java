@@ -19,6 +19,7 @@ public class PracticeOne {
 		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
 		PracticeOne.toPrintCurentDateAndTime();
 		PracticeOne.toGetTheCononicalRepresentOfTheString();
+		PracticeOne.findPrimeNumber(10);
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -117,5 +118,25 @@ public class PracticeOne {
 		String Str3 = Str2.intern();
 		System.out.println("Str1 = Str2 ?" +(Str1 == Str2));
 		System.out.println("Str1 = Str3 ?" + (Str1 == Str3));
+	}
+	public static void findPrimeNumber(int num){
+		for (int i=1; i<=num; i++){
+			if (i==2 || i==3){
+		System.out.println(i);
+			}
+			else {
+				for (int j=2; j<=i-1; j++){
+					if (i%j==0){
+						break;
+					}
+					if (i%j!=0 && j == i-1){
+						System.out.println(i);
+					}
+				}
+			}
+		
+		
+			
+		}
 	}
 }
