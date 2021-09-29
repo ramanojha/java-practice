@@ -1,6 +1,11 @@
 package com.jolly.java.practice;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class PracticeOne {
+	private static final String string = null;
 	public static void main (String[]args){
 		PracticeOne.add(10, 20);
 		PracticeOne.sub(30, 21);
@@ -9,6 +14,11 @@ public class PracticeOne {
 		PracticeOne.printRightAngleTriangle(5);
 		PracticeOne.printHoloRectangle(4, 5);
 		PracticeOne.findArmStrongNumber(370);
+		PracticeOne.reverseANumber(153);
+		PracticeOne.toReplaceASpecifiedCharacterWithAnotherCharacter("This Site uses cookies ");
+		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
+		PracticeOne.toPrintCurentDateAndTime();
+		PracticeOne.toGetTheCononicalRepresentOfTheString();
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -65,6 +75,7 @@ public class PracticeOne {
 			arm = arm + mul;
 			temp1 = temp1/10;
 		}
+
 		if (num == arm){
 			System.out.println("This is Armstrong number");
 		}
@@ -72,5 +83,39 @@ public class PracticeOne {
 			System.out.println(" This is not Armstong number" );
 		}
 	}
+	public static void reverseANumber(int num ){
+		int temp = num;
+		int rem = 0;
+		int rev =0 ;
+		while (temp!=0){
+			rem  = temp%10;
+			temp = temp/10;
+			
+			rev = rev*10 + rem;
+
+		}
+	}
 	
+	public static void toReplaceASpecifiedCharacterWithAnotherCharacter(String Str){
+		
+		String NewStr = Str.replace('o', 'a');
+		System.out.println("Orignal string  => " +Str);
+		System.out.println("New string  => "   +NewStr);
+	}
+	public static void aUniqueIdentifierAGivenNumber(String Str){
+		int hash_code = Str.hashCode();
+		System.out.println(" hash code for " +Str+ " is " +hash_code);
+	}
+	public static void toPrintCurentDateAndTime(){
+		String date = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").
+				format(Calendar.getInstance().getTime());
+		System.out.println(date);
+	}
+	public static void toGetTheCononicalRepresentOfTheString(){
+		String Str1 = "Programing language";
+		String Str2 = new StringBuffer ("programing").append ("language").toString();
+		String Str3 = Str2.intern();
+		System.out.println("Str1 = Str2 ?" +(Str1 == Str2));
+		System.out.println("Str1 = Str3 ?" + (Str1 == Str3));
+	}
 }
