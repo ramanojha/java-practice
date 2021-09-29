@@ -7,6 +7,7 @@ public class PracticeOne {
 		PracticeOne.mul(10, 15);
 		PracticeOne.div(50, 2);
 		PracticeOne.printRightAngleTriangle(5);
+		PracticeOne.printHoloRectangle(4, 5);
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -26,6 +27,19 @@ public class PracticeOne {
 		for (int i=1; i<=n; i++){
 			for (int j=1; j<=i; j++){
 				System.out.print("*");
+			}
+			System.out.println( );
+		}
+	}
+	public static void printHoloRectangle(int m ,int n){
+		for (int i=1; i<=m; i++){
+			for (int j =1; j<=n; j++){
+				if (i==1 || i==m || j==1 || j==n){
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
 			}
 			System.out.println( );
 		}
