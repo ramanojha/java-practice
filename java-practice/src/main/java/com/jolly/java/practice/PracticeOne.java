@@ -6,6 +6,7 @@ public class PracticeOne {
 		PracticeOne.sub(30, 21);
 		PracticeOne.mul(10, 15);
 		PracticeOne.div(50, 2);
+		PracticeOne.printRightAngleTriangle();
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -19,5 +20,14 @@ public class PracticeOne {
 	}
 	public static void div (int a , int b){
 		System.out.println(a/b);
+	}
+	public static void printRightAngleTriangle(){
+		int n= 5;
+		for (int i=1; i<=n; i++){
+			for (int j=1; j<=i; j++){
+				System.out.print("*");
+			}
+			System.out.println( );
+		}
 	}
 }
