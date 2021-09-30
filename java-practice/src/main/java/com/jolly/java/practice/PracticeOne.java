@@ -7,19 +7,20 @@ import java.util.Date;
 public class PracticeOne {
 	private static final String string = null;
 	public static void main (String[]args){
-		PracticeOne.add(10, 20);
-		PracticeOne.sub(30, 21);
-		PracticeOne.mul(10, 15);
-		PracticeOne.div(50, 2);
-		PracticeOne.printRightAngleTriangle(5);
-		PracticeOne.printHoloRectangle(4, 5);
-		PracticeOne.findArmStrongNumber(370);
-		PracticeOne.reverseANumber(153);
-		PracticeOne.toReplaceASpecifiedCharacterWithAnotherCharacter("This Site uses cookies ");
-		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
-		PracticeOne.toPrintCurentDateAndTime();
-		PracticeOne.toGetTheCononicalRepresentOfTheString();
-		PracticeOne.findPrimeNumber(10);
+//		PracticeOne.add(10, 20);
+//		PracticeOne.sub(30, 21);
+//		PracticeOne.mul(10, 15);
+//		PracticeOne.div(50, 2);
+//		PracticeOne.printRightAngleTriangle(5);
+//		PracticeOne.printHoloRectangle(4, 5);
+//		PracticeOne.findArmStrongNumber(370);
+//		PracticeOne.reverseANumber(153);
+//		PracticeOne.toReplaceASpecifiedCharacterWithAnotherCharacter("This Site uses cookies ");
+//		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
+//		PracticeOne.toPrintCurentDateAndTime();
+//		PracticeOne.toGetTheCononicalRepresentOfTheString();
+//		PracticeOne.findPrimeNumber(10);
+		PracticeOne.removeSameElement();
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -134,9 +135,27 @@ public class PracticeOne {
 					}
 				}
 			}
-		
-		
-			
+		}
+	}
+	public static void removeSameElement(){
+		int []array1 = {2,4,5,6,3,4,5,4,4,4};
+		int []array2 = new int [array1.length];
+		int k =0;
+		int cnt= 0;
+		for (int i=0; i<=array1.length; i++){
+			for (int j=0; j<=k; j++){
+				cnt++;
+				if(array1[i]== array2[j]){
+					break;
+				}
+				else if (array1[i]!= array2[j] && j == k){
+					array2[k] = array1[i];
+					System.out.println(array2[k]);
+					k++;
+					break;
+				}
+			}
 		}
 	}
 }
+
