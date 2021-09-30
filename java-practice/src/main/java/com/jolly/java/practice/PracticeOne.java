@@ -20,7 +20,12 @@ public class PracticeOne {
 //		PracticeOne.toPrintCurentDateAndTime();
 //		PracticeOne.toGetTheCononicalRepresentOfTheString();
 //		PracticeOne.findPrimeNumber(10);
-		PracticeOne.removeSameElement();
+		//PracticeOne.removeSameElement();
+	//	PracticeOne.toCheckWhetherAGivenStringStartsWithTheContentsOfAnotherString();
+		//PracticeOne.toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions();
+		//PracticeOne.toCreateACharacterArrayContainingTheContentsOfAString();
+	//	PracticeOne.toConvertAllTheCharactersInAStringTolowercase();
+		PracticeOne.toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString();
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -156,6 +161,41 @@ public class PracticeOne {
 				}
 			}
 		}
+	}
+	public static void toCheckWhetherAGivenStringStartsWithTheContentsOfAnotherString(){
+		String str1  = "red is a favorite color";
+		String str2  = "orange is also favorite color";
+		String startStr = "red";
+		boolean stars1 = str1.startsWith(startStr);
+		boolean stars2  = str2.startsWith(startStr);
+		System.out.println(str1 + " stars With " +startStr+ " ? " +stars1);
+		System.out.println(str2 + " star With " + startStr+ " ? " +stars2);
+		
+	}
+	public static void toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions(){
+		String str = "where my merchandise comes from";
+		String new_str = str.substring(3, 10);
+		System.out.println("old str => " + str);
+		System.out.println("new str => " + new_str);
+		
+		
+	}
+	public static void toCreateACharacterArrayContainingTheContentsOfAString(){
+		String str = "Where are you going";
+		char[]arr = str.toCharArray();
+		System.out.println(str);
+	}
+	public static void toConvertAllTheCharactersInAStringTolowercase(){
+		String str = "WHERE ARE YOU COME FROM";
+		String lowerStr = str.toLowerCase();
+		System.out.println("old Str =>" + str);
+		System.out.println("New str =>" + lowerStr);
+	}
+	public static void toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString(){
+		String Str = "I HAVE TO GO MARKET FOR SHOPPING";
+		String new_Str = Str.trim();
+		System.out.println("old Str => " +Str);
+		System.out.println("New Str => " +new_Str);
 	}
 }
 
