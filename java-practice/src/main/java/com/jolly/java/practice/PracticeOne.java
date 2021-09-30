@@ -7,19 +7,25 @@ import java.util.Date;
 public class PracticeOne {
 	private static final String string = null;
 	public static void main (String[]args){
-		PracticeOne.add(10, 20);
-		PracticeOne.sub(30, 21);
-		PracticeOne.mul(10, 15);
-		PracticeOne.div(50, 2);
-		PracticeOne.printRightAngleTriangle(5);
-		PracticeOne.printHoloRectangle(4, 5);
-		PracticeOne.findArmStrongNumber(370);
-		PracticeOne.reverseANumber(153);
-		PracticeOne.toReplaceASpecifiedCharacterWithAnotherCharacter("This Site uses cookies ");
-		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
-		PracticeOne.toPrintCurentDateAndTime();
-		PracticeOne.toGetTheCononicalRepresentOfTheString();
-		PracticeOne.findPrimeNumber(10);
+//		PracticeOne.add(10, 20);
+//		PracticeOne.sub(30, 21);
+//		PracticeOne.mul(10, 15);
+//		PracticeOne.div(50, 2);
+//		PracticeOne.printRightAngleTriangle(5);
+//		PracticeOne.printHoloRectangle(4, 5);
+//		PracticeOne.findArmStrongNumber(370);
+//		PracticeOne.reverseANumber(153);
+//		PracticeOne.toReplaceASpecifiedCharacterWithAnotherCharacter("This Site uses cookies ");
+//		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
+//		PracticeOne.toPrintCurentDateAndTime();
+//		PracticeOne.toGetTheCononicalRepresentOfTheString();
+//		PracticeOne.findPrimeNumber(10);
+		//PracticeOne.removeSameElement();
+	//	PracticeOne.toCheckWhetherAGivenStringStartsWithTheContentsOfAnotherString();
+		//PracticeOne.toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions();
+		//PracticeOne.toCreateACharacterArrayContainingTheContentsOfAString();
+	//	PracticeOne.toConvertAllTheCharactersInAStringTolowercase();
+		PracticeOne.toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString();
 	}
 	public static void add(int a , int b){
 		System.out.println(a+b);
@@ -134,9 +140,62 @@ public class PracticeOne {
 					}
 				}
 			}
-		
-		
-			
 		}
 	}
+	public static void removeSameElement(){
+		int []array1 = {2,4,5,6,3,4,5,4,4,4};
+		int []array2 = new int [array1.length];
+		int k =0;
+		int cnt= 0;
+		for (int i=0; i<=array1.length; i++){
+			for (int j=0; j<=k; j++){
+				cnt++;
+				if(array1[i]== array2[j]){
+					break;
+				}
+				else if (array1[i]!= array2[j] && j == k){
+					array2[k] = array1[i];
+					System.out.println(array2[k]);
+					k++;
+					break;
+				}
+			}
+		}
+	}
+	public static void toCheckWhetherAGivenStringStartsWithTheContentsOfAnotherString(){
+		String str1  = "red is a favorite color";
+		String str2  = "orange is also favorite color";
+		String startStr = "red";
+		boolean stars1 = str1.startsWith(startStr);
+		boolean stars2  = str2.startsWith(startStr);
+		System.out.println(str1 + " stars With " +startStr+ " ? " +stars1);
+		System.out.println(str2 + " star With " + startStr+ " ? " +stars2);
+		
+	}
+	public static void toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions(){
+		String str = "where my merchandise comes from";
+		String new_str = str.substring(3, 10);
+		System.out.println("old str => " + str);
+		System.out.println("new str => " + new_str);
+		
+		
+	}
+	public static void toCreateACharacterArrayContainingTheContentsOfAString(){
+		String str = "Where are you going";
+		char[]arr = str.toCharArray();
+		System.out.println(str);
+	}
+	public static void toConvertAllTheCharactersInAStringTolowercase(){
+		String str = "WHERE ARE YOU COME FROM";
+		String lowerStr = str.toLowerCase();
+		System.out.println("old Str =>" + str);
+		System.out.println("New str =>" + lowerStr);
+	}
+	public static void toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString(){
+		String Str = "I HAVE TO GO MARKET FOR SHOPPING";
+		String new_Str = Str.trim();
+		System.out.println("old Str => " +Str);
+		System.out.println("New Str => " +new_Str);
+	}
 }
+
