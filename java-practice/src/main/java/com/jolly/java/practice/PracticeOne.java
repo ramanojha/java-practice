@@ -20,6 +20,7 @@ public class PracticeOne {
 	private static final char max = 0;
 	private static int i;
 	public static void main (String[]args){
+
 		//		PracticeOne.add(10, 20);
 		//		PracticeOne.sub(30, 21);
 		//		PracticeOne.mul(10, 15);
@@ -102,22 +103,26 @@ public class PracticeOne {
 		//		System.out.println("The given no is "+n1);
 		//		System.out.println("The new string is "+m.nTwice(Str1,n1));
 
-//		PracticeOne m= new PracticeOne();
-//		String str1 =  "educated";
-//
-//		System.out.println("The given strings is: "+str1);
-//		System.out.println("The first two characters appear in the last is: "+m.firstInLast(str1));
-		
-//		PracticeOne m= new PracticeOne();
-//	      String str1 =  "testcricket";
-//	      System.out.println("The given strings is: "+str1);
-//	      System.out.println("The new string is: "+m.excludeT(str1));
+//		PracticeOne.add(10, 20);
+//		PracticeOne.sub(30, 21);
+//		PracticeOne.mul(10, 15);
+//		PracticeOne.div(50, 2);
+//		PracticeOne.printRightAngleTriangle(5);
+//		PracticeOne.printHoloRectangle(4, 5);
+//		PracticeOne.findArmStrongNumber(370);
+//		PracticeOne.reverseANumber(153);
+//		PracticeOne.toReplaceASpecifiedCharacterWithAnotherCharacter("This Site uses cookies ");
+//		PracticeOne.aUniqueIdentifierAGivenNumber("java exercise.");
+//		PracticeOne.toPrintCurentDateAndTime();
+//		PracticeOne.toGetTheCononicalRepresentOfTheString();
+//		PracticeOne.findPrimeNumber(10);
+		//PracticeOne.removeSameElement();
+	//	PracticeOne.toCheckWhetherAGivenStringStartsWithTheContentsOfAnotherString();
+		//PracticeOne.toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions();
+		//PracticeOne.toCreateACharacterArrayContainingTheContentsOfAString();
+	//	PracticeOne.toConvertAllTheCharactersInAStringTolowercase();
+		PracticeOne.toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString();
 
-		
-//		PracticeOne m= new PracticeOne();
-//	      String str1 =  "ghost";
-//	      System.out.println("The given strings is: "+str1);
-//	      System.out.println("The new string is: "+m.exceptFirstTwo(str1));
 	}
 
 
@@ -267,31 +272,7 @@ public class PracticeOne {
 		System.out.println(str2 + " star With " + startStr+ " ? " +stars2);
 
 	}
-	public static void toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions(){
-		String str = "where my merchandise comes from";
-		String new_str = str.substring(3, 10);
-		System.out.println("old str => " + str);
-		System.out.println("new str => " + new_str);
 
-
-	}
-	public static void toCreateACharacterArrayContainingTheContentsOfAString(){
-		String str = "Where are you going";
-		char[]arr = str.toCharArray();
-		System.out.println(str);
-	}
-	public static void toConvertAllTheCharactersInAStringTolowercase(){
-		String str = "WHERE ARE YOU COME FROM";
-		String lowerStr = str.toLowerCase();
-		System.out.println("old Str =>" + str);
-		System.out.println("New str =>" + lowerStr);
-	}
-	public static void toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString(){
-		String Str = "I HAVE TO GO MARKET FOR SHOPPING";
-		String new_Str = Str.trim();
-		System.out.println("old Str => " +Str);
-		System.out.println("New Str => " +new_Str);
-	}
 	public static void toRemoveDuplicateCharactersFromAGivenStringPresentsInAnotherGivenString(){
 		String Str1 = "Where Are YOU come ";
 		String Str2 ="From";
@@ -868,26 +849,33 @@ public class PracticeOne {
 			}
 			System.out.println( );
 		}
+	}	
+	
+	public static void toGetASubstringOfAGivenStringBetweenTwoSpecifiedPositions(){
+		String str = "where my merchandise comes from";
+		String new_str = str.substring(3, 10);
+		System.out.println("old str => " + str);
+		System.out.println("new str => " + new_str);
+		
+		
+	}
+	public static void toCreateACharacterArrayContainingTheContentsOfAString(){
+		String str = "Where are you going";
+		char[]arr = str.toCharArray();
+		System.out.println(str);
+	}
+	public static void toConvertAllTheCharactersInAStringTolowercase(){
+		String str = "WHERE ARE YOU COME FROM";
+		String lowerStr = str.toLowerCase();
+		System.out.println("old Str =>" + str);
+		System.out.println("New str =>" + lowerStr);
+	}
+	public static void toTrimAnyLeadingOrTrailingWhitespaceFromAGivenString(){
+		String Str = "I HAVE TO GO MARKET FOR SHOPPING";
+		String new_Str = Str.trim();
+		System.out.println("old Str => " +Str);
+		System.out.println("New Str => " +new_Str);
 	}
 }
-	
-	
-	  
-	  
-
-	   
-	  
-	 
-	
-
-
-	
-		
-	
-
-
-
-
-
 
 
